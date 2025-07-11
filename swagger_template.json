@@ -1,0 +1,135 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "API da Clínica Veterinária",
+        "description": "Uma API simples para gerenciar clínicas veterinárias, além de seus atendimentos, veterinários, tutores e pets.",
+        "version": "1.0"
+    },
+    "definitions": {
+        "Atendimento": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "description": "O ID do atendimento.",
+                    "example": 1
+                },
+                "data": {
+                    "type": "string",
+                    "description": "A data do atendimento. Formato: YYYY-MM-DDTHH:MM:SS",
+                    "example": "2025-07-10T12:30:00"
+                },
+                "descricao": {
+                    "type": "string",
+                    "description": "Descrição sobre o que será o atendimento.",
+                    "example": "Exame de Rotina"
+                },
+                "pet_id": {
+                    "type": "integer",
+                    "description": "O ID do pet que será atendido.",
+                    "example": 1
+                },
+                "veterinario_id": {
+                    "type": "integer",
+                    "description": "O ID do veterinário responsável pelo atendimento.",
+                    "example": 1
+                }
+            }
+        },
+        "Clinica": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "description": "O ID da clínica.",
+                    "example": 1
+                },
+                "nome": {
+                    "type": "string",
+                    "description": "O nome da clínica.",
+                    "example": "Clínica Vet Principal"
+                },
+                "cidade": {
+                    "type": "string",
+                    "description": "A cidade onde a clínica está localizada.",
+                    "example": "Natal"
+                }
+            }
+        },
+        "Pet": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "description": "O ID do pet.",
+                    "example": 1
+                },
+                "nome": {
+                    "type": "string",
+                    "description": "O nome do animal.",
+                    "example": "Tom"
+                },
+                "especie": {
+                    "type": "string",
+                    "description": "Qual a espécie do pet.",
+                    "example": "Gato"
+                },
+                "idade": {
+                    "type": "integer",
+                    "description": "A idade do animal.",
+                    "example": 5
+                },
+                "tutor_id": {
+                    "type": "integer",
+                    "description": "O ID do tutor responsável pelo animal.",
+                    "example": 1
+                }
+            }
+        },
+        "Tutor": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "description": "O ID do tutor.",
+                    "example": 1
+                },
+                "nome": {
+                    "type": "string",
+                    "description": "O nome do tutor.",
+                    "example": "Glaucio Peixoto"
+                },
+                "telefone": {
+                    "type": "string",
+                    "description": "O telefone do tutor.",
+                    "example": "(84)91122-3344"
+                }
+            }
+        },
+        "Veterinario": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "description": "O ID do veterinário.",
+                    "example": 1
+                },
+                "nome": {
+                    "type": "string",
+                    "description": "O nome do veterinário.",
+                    "example": "Dr. Marcos Braga"
+                },
+                "especialidade": {
+                    "type": "string",
+                    "description": "Qual a especialidade do veterinário.",
+                    "example": "Gato"
+                },
+                "clinica_id": {
+                    "type": "integer",
+                    "description": "O ID da clínica a qual o veterinário é vinculado.",
+                    "example": 1
+                }
+            }
+        }
+    }
+}
