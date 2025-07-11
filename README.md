@@ -15,7 +15,7 @@ O código do programa é estruturado seguindo o modelo representado abaixo.
 - `/repositories` é a pasta que contém os repositórios responsáveis por comunicar o programa com o banco de dados, criando funções intermediárias entre as classes e o programa;
 - `/api` é a pasta que possui as definições de rotas da api, para acesso por protocolo `http` por meio da bilbioteca `Flask`;
 - `db.py` é a parte do programa responsável por iniciar a comunicação com o banco de dados. **É recomendado alterar as informações de comunicação** *(endereço do banco de dados, credenciais...)* **aqui antes de executar o programa**;
-- `main.py` é responsável por iniciar a API em `http://localhost:5000`, além de, quando executado, cria as tabelas *vazias* do banco de dados automaticamente;
+- `main.py` é responsável por iniciar a API em `http://localhost:5000`, além de, quando executado, cria as tabelas *vazias* no banco de dados automaticamente;
 - `requirements.txt` possui as bibliotecas python necessárias para execução da API;
 - `swagger_template.json` contém as definições de exemplos que são mostrados na interface Swagger.
 ## Interface Swagger
