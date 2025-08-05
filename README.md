@@ -1,6 +1,6 @@
 ```
   O seguinte repositório foi movido da conta de usuário "Victor-Gouveia",
-  com o objetivo de preservação e arquivamento deste projeto.
+  com o objetivo de documentação, preservação e arquivamento deste projeto.
 ```
 # Banco de Dados: Clínica Veterinária
 Esse repositório contém os códigos para uma API de uma rede de clínicas veterinárias, onde são registrados pets, tutores, veterinários, atendimentos e clínicas, integrando todas as informações por meio de um banco de dados.
